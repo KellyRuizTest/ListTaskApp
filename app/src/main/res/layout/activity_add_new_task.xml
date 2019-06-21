@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNewTask">
+
+    <EditText
+        android:id="@+id/describeEdit"
+        android:layout_width="258dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Describe your task"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:text="Priority"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="378dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonLow"
+            android:layout_width="122dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="onRadioButtonClicked"
+            android:text="Low" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMedium"
+            android:layout_width="122dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="onRadioButtonClicked"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/radioButtonHigh"
+            android:layout_width="122dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:onClick="onRadioButtonClicked"
+            android:text="High" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="262dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="79dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="ADD" />
+
+
+</RelativeLayout>
